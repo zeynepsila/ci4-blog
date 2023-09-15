@@ -1,0 +1,108 @@
+ERROR - 2023-09-15 19:49:57 --> mysqli_sql_exception: Table 'ci4-blog.blog' doesn't exist in D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xamppnew\htdocs\ci4-blog\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xamppnew\htdocs\ci4-blog\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xamppnew\htdocs\ci4-blog\app\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+#7 D:\xamppnew\htdocs\ci4-blog\app\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+#8 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#9 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamppnew\htdocs\ci4-blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-15 19:49:57 --> Table 'ci4-blog.blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-15 19:51:05 --> mysqli_sql_exception: Table 'ci4-blog.blog' doesn't exist in D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xamppnew\htdocs\ci4-blog\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xamppnew\htdocs\ci4-blog\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xamppnew\htdocs\ci4-blog\app\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+#7 D:\xamppnew\htdocs\ci4-blog\app\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+#8 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#9 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamppnew\htdocs\ci4-blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-15 19:51:05 --> Table 'ci4-blog.blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-15 19:51:06 --> mysqli_sql_exception: Table 'ci4-blog.blog' doesn't exist in D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamppnew\htdocs\ci4-blog\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xamppnew\htdocs\ci4-blog\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xamppnew\htdocs\ci4-blog\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xamppnew\htdocs\ci4-blog\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xamppnew\htdocs\ci4-blog\app\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+#7 D:\xamppnew\htdocs\ci4-blog\app\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+#8 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#9 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\xamppnew\htdocs\ci4-blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamppnew\htdocs\ci4-blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-15 19:51:06 --> Table 'ci4-blog.blog' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\BlogModel.php(9): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pages.php(11): App\Models\BlogModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-15 21:00:35 --> Undefined variable $POST
+in APPPATH\Views\blog\create.php on line 3.
+ 1 APPPATH\Views\blog\create.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $POST', 'D:\\xamppnew\\htdocs\\ci4-blog\\app\\Views\\blog\\create.php', 3)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xamppnew\\htdocs\\ci4-blog\\app\\Views\\blog\\create.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('blog/create', [], true)
+ 5 APPPATH\Controllers\Blog.php(28): view('blog/create')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Blog->create()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-15 21:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 21:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 22:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 22:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 22:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 22:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-15 22:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
