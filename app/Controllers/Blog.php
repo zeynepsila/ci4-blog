@@ -7,7 +7,32 @@ use App\Models\BlogModel;
 class Blog extends BaseController
 {
    
+    public function edit($id){
+        $model = new BlogModel();
+        $data['post'] = $model->find($id);
+        echo view('templates/header');
+        echo view('blog/edit', $data);
+        echo view('templates/footer');    
+    }
 
+    function update($id){
+        $model = new BlogModel();
+        $model->find($id);
+
+        $data=
+            [
+                'title' => $this->request->getPost('title'),
+                'body' => $this->request->getPost('body'),
+                'slug' => url_title($this->request->getPost('title')),
+            ];
+            $model->update($id, $data);
+        }
+        
+        function delete($id){
+            $model = new BlogModel();
+            $sql = "DELETE FROM post WHERE id = ?";
+            $model->query($sql, [$id]);
+        }
     function post($slug){
         $model = new BlogModel();
 
@@ -45,4 +70,6 @@ class Blog extends BaseController
             return redirect()->to('/');
         }
     }
+
+    
 }

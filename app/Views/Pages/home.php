@@ -27,6 +27,8 @@
     <?php if ($news): ?>
       <?php foreach ($news as $newsItem): ?>
         <h3><a href="/blog/<?=$newsItem['slug']?>"><?=$newsItem['title'] ?></h3>
+        <a class="btn btn-success btn-red" href=" <?= base_url('edit/'.$newsItem['id'])?>" role="button">edit</a>
+        <a class="btn btn-danger btn-red" href=" <?= base_url('delete/'.$newsItem['id'])?>" role="button">delete</a>
         <?php endforeach; ?>
         <?php else: ?>
           <p class="text-center">No post have been found</p>
